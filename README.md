@@ -1,19 +1,13 @@
 # Containerize the Terraform command
 
-## To build it
+## To run it from a docker hub image
 
 ```bash
-docker build -t YOUR_IMAGE_NAME .
+docker run -it --rm mtheoryx/terraform-docker:1.0.0
 ```
 
-## To run it
+## Give it a command
 
 ```bash
-docker run -it --rm YOUR_IMAGE_NAME
-```
-
-## Give it a command!
-
-```bash
-docker run -it --rm YOUR_IMAGE_NAME terraform --help
+docker run -it --rm mtheoryx/terraform-docker:1.0.0 terraform --help
 ```
